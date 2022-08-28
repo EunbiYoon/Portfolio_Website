@@ -1,0 +1,201 @@
+#introduction-section{
+    padding: 201px 15px 250px 15px;
+    background-color: rgba(108, 107, 107, 0.121);
+}
+
+#introduction-section .title{
+    position: relative;
+    width: 200px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0 auto 20px auto;
+
+}
+
+#introduction-section h1
+{
+    position: relative;
+    font-size: 4rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:pink;
+    -webkit-text-stroke: 1px red;
+    z-index: 1;
+    padding-left:395px;
+}
+
+#introduction-section .introduction-container{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 0.8fr;
+    grid-template-rows: 180px 210px 210px;
+    grid-gap: 10px;
+}
+
+#introduction-section .introduction-container .box{
+    border-style: solid;
+    border-width: 2px;
+    border-color: paleturquoise;
+    background-color: white;
+    padding: 12px;
+    transition : all .4s ease-in-out;
+    border-radius: 1rem;
+}
+
+#introduction-section .introduction-container .box h5{
+    font-size: 1.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:white;
+ 
+}
+
+#introduction-section .introduction-container .box p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color : grey;
+}
+
+
+#introduction-section .introduction-container .box.yellow .fas{
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    color:#836e34ab;
+    padding-right: 10px;
+    
+}
+#introduction-section .introduction-container .box.blue .fas{
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    color:#577ec5ab;
+    padding-right: 10px;
+}
+#introduction-section .introduction-container .box.green .fab{
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    color:#305144ab;
+    padding-right: 10px;
+}
+#introduction-section .introduction-container .box.red .fas{
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    color:rgba(167, 98, 167, 0.752);
+    padding-right: 10px;
+}
+
+
+#introduction-section .introduction-container .box.yellow p{
+    color:#836e34ab;
+    font-weight: 600;
+}
+#introduction-section .introduction-container .box.blue p{
+    color:#577ec5ab;
+    font-weight: 800;
+}
+#introduction-section .introduction-container .box.green p{
+    color:#305144ab;
+    font-weight: 800;
+}
+#introduction-section .introduction-container .box.red p{
+    color:rgba(167, 98, 167, 0.752);
+    font-weight: 800;
+}
+
+
+#introduction-section .introduction-container .box.yellow h5{ 
+    color: #836e34ab;
+    display: inline-block;
+}
+#introduction-section .introduction-container .box.blue h5{ 
+    color:#577ec5ab;
+    display: inline-block;
+}
+#introduction-section .introduction-container .box.green h5{ 
+    color: #305144ab;
+    display: inline-block;
+}
+#introduction-section .introduction-container .box.red h5{ 
+    color: rgba(167, 98, 167, 0.752);
+    display: inline-block;
+}
+
+#introduction-section .introduction-container .box.yellow{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+#introduction-section .introduction-container .box.blue{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#introduction-section .introduction-container .box.green{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#introduction-section .introduction-container .box.red{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+
+
+
+/*tablets*/
+@media only screen and (max-width: 1248px){
+    #introduction-section .introduction-container{
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+    #introduction-section .introduction-container .box h5{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box{
+        padding:0 30px;
+    }
+    #introduction-section .introduction-container .box.blue .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.red .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.yellow .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box p{
+        font-size: 1.3rem;
+    }
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #introduction-section .title .circle{
+        width : 80px;
+        height : 80px;
+    }
+    #introduction-section .title h1{
+        font-size: 2rem;
+        top:-35px;
+        margin-bottom:0;
+    }
+    #introduction-section .introduction-container{
+        grid-template-columns: 100%;
+    }
+    #introduction-section .introduction-container .box h5{
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+    }
+    #introduction-section .introduction-container .box{
+        padding:0;
+    }
+    #introduction-section .introduction-container .box.blue .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.red .fas{
+        margin-bottom: 0.3rem;
+    }
+    #introduction-section .introduction-container .box.yellow .fas{
+        margin-bottom: 0.3rem;
+    }
+}

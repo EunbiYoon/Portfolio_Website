@@ -1,0 +1,145 @@
+#top{
+    margin-bottom: 200px;
+}
+#top .container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 221px 0;
+    align-items: center;
+}
+#top .info{
+    padding: 15px 62px 15px 0px;
+    position : relative
+}
+
+
+#top .info p{
+    position: relative;
+    color:#919191;
+    text-transform: capitalize;
+    margin-bottom : 4rem;
+    z-index: 1;
+}
+#top .info a{
+    position: relative; 
+    font-size: .9rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    z-index: 1;
+    letter-spacing:2px;
+}
+
+#top h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    animation: glow1 1s ease-in-out infinite alternate;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+#top h2 {
+    font-size: 70px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;  
+    color:white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60092, 0 0 20px #e60092, 0 0 25px #e60092, 0 0 30px #e60092, 0 0 35px #e60092; 
+}
+#top h3 {
+    font-size: 60px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #b56efc, 0 0 20px #b56efc, 0 0 25px #b56efc, 0 0 30px #b56efc, 0 0 35px #b56efc;    
+}
+#top h4 {
+    font-size: 500px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;   
+}
+
+#top .neonIcon 
+{
+    animation: flicker4 1.5s infinite alternate;
+    color: #fff;
+}
+
+
+
+
+/* tablets*/
+@media only screen and (max-width: 1248px){
+    #top .container{
+        padding:100px 30px;
+    }
+    #top h1{
+        font-size:5rem;
+    }
+    #top h2{
+        font-size:3rem;
+    }
+    #top h3{
+        font-size:3rem;
+    }
+    #top h4{
+        font-size:15rem;
+    }
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #top .container{
+        margin-left:1rem;
+    }
+    #top h1{
+        font-size:2.3rem;
+    }
+    #top h2{
+        font-size:1.5rem;
+    }
+    #top h3{
+        font-size:1.3rem;
+    }
+    #top h4{
+        font-size:6rem;
+    }
+}
+
+@keyframes glow1 {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+}
+
+
+
+@keyframes flicker4 {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+        }
+            
+        20%, 25%, 55% {        
+                text-shadow: none;
+        }  
+     }

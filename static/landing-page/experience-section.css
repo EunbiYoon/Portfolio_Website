@@ -1,0 +1,151 @@
+#experience-section{
+    margin:0px auto;
+    padding: 0px;
+    background-image:url('https://images.adsttc.com/media/images/5d3f/7d5d/284d/d12d/8100/0109/medium_jpg/FEATURED_IMAGE.jpg?1564441924');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+}
+#experience-section .container{
+    backdrop-filter: blur(6px); 
+    background-color:#16171b84;
+    padding:0px;
+    border-radius: 20px;
+}
+
+#experience-section .large-title{
+    color: whitesmoke;
+    font-weight : 900;
+    font-size : 4.5rem;
+    text-align:center;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+#experience-section .experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding:50px;
+    grid-gap: 30px 0;
+    text-align: center;
+    margin : 0 auto;
+}
+
+#experience-section .experience-container .box .text1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#experience-section .experience-container .box .text2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#experience-section .experience-container .box .text3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#experience-section .experience-container .content .text1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#experience-section .experience-container .content .text2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#experience-section .experience-container .content .text3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/*전체 서식*/
+#experience-section .experience-container .box{
+    background-color:rgba(255, 255, 255, 0.58);
+    border-radius: 10px;
+    margin: auto 0;
+    padding:10px;
+}
+#experience-section .experience-container .content{
+    background-color: rgba(255, 255, 255, 0.548);
+    margin: auto 0;
+}
+
+#experience-section .experience-container .box h4{
+    color: #16171b;
+    font-size : 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#experience-section .experience-container .box .date{
+    color:#193c4f;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size : 1.5rem;
+    padding : 5px 0;
+    display : block;
+}
+
+#experience-section .experience-container .box p{
+    color: #4b4b4b;
+    font-size : 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    display : block;
+    line-height: 1.5;
+}
+
+#experience-section .experience-container .content h5{
+    color: #215938;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/*tablets*/
+@media only screen and (max-width: 960px){
+    #experience-section .large-title{
+        font-size: 3rem;
+        left: 0;
+    }
+
+    #experience-section .experience-container .large-icons{
+        position: relative;
+        top: -25px;
+    }
+    #experience-section .experience-container .large-icons .square{
+        border: 20px solid #52b8ff;
+        padding: 5px;
+        display: inline-block;
+        position: relative;
+        top: 93px;
+        left: 86px;
+
+    }
+}
+
+/*phones*/
+@media only screen and (max-width: 767px){
+    #experience-section .large-title{
+        font-size: 2.5rem;
+        left: 0;
+    }
+    #experience-section .experience-container{
+        grid-template-columns: 1fr;
+    }
+    #experience-section .experience-container .large-icons{
+        position: relative;
+        display: none;
+    }
+
+    #experience-section .experience-container .info .info-box h4{
+        font-size: 0.9rem;
+    }
+
+    #experience-section .experience-container .info .info-box .date{
+        font-family: 0.8rem;
+    }
+    
+}

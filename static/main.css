@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap');
+@import "cssreset.css";
+@import "landing-page/top-section.css";
+@import "landing-page/introduction-section.css";
+@import "landing-page/project-section.css";
+@import "landing-page/experience-section.css";
+@import "landing-page/summary-section.css";
+@import "footer-section.css";
+@import "project-page/website.css";
+
+html {
+    height: 100%;
+  }
+body{
+    position:absolute; 
+    top:0; 
+    bottom:0; right:0; left:0; 
+    background: #2f3742;
+    background-color: rgba(238, 119, 119, 0.121);
+}
+
+/*전체 팜플렛의 위치 모니터 크기를 고려한 스펙*/
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+header{
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    float:right;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    display: fixed;
+}
+
+header nav{
+    width: 100%;
+    float:right;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    background-color:rgb(160, 193, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    position:fixed;
+    z-index:3;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.541);
+}
+
+header .signature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo a {
+    display: flex;
+    width: 120px;
+    padding:5px 10px;
+    text-decoration: none;
+    font-size:3rem;
+    color:white;
+    font-weight: 800;
+}
+
+header .logo .name:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #28ce89, 0 0 20px #28ce89, 0 0 25px #28ce89, 0 0 30px #28ce89, 0 0 35px #28ce89;    
+}
+
+
+header .navigation{
+    text-align: center;
+}
+
+header .menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index:1;
+    transition: 0.5s;
+    text-align: center;
+}
+
+header .menu span{
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: normal;
+}
+
+
+header .menu li{
+    list-style-type:none;
+}
+
+header .menu li a{
+    color:rgba(128, 128, 128, 0.729);
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: block;
+    padding: 0px 40px;
+    line-height: 1;
+    font-weight: 600;
+    transition: 0.3s;
+
+}
+
+header .menu li a:hover{
+    color:white;
+    font-weight: 800;
+
+}
+
+/*Hamburger symbol*/
+header .hamburger{
+    position:relative;
+    width: 25px;
+    height: 4px;
+    background-color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index:3;
+}
+
+header .hamburger:before, header .hamburger:after{
+    content:"";
+    position:absolute;
+    height: 4px;
+    right: 0;
+    background-color: grey;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+header .hamburger:before{
+    top:-10px;
+    width: 25px;
+}
+
+header .hamburger:after{
+    top:10px;
+    width: 25px;
+}
+
+/*toggle menu*/
+header .toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index:3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/*webstie 안보임*/
+header .hamburger,header.toggle-menu{
+    display: none;
+}
+
+/*check 하면 가운데 반응*/
+.navigation input:checked ~ .hamburger{
+    background-color: transparent;
+    display: none;
+
+}
+
+/*check 하면 위에 반응*/
+.navigation input:checked ~ .hamburger:before{
+    top:0;
+    transform: rotate(-45deg);
+    width: 30px;
+
+}
+
+/*check 하면 아래 반응*/
+.navigation input:checked ~.hamburger:after{
+    top:0;
+    transform: rotate(45deg);
+    width: 30px;
+
+}
+
+ .navigation input:checked ~.menu {
+    right: 0;
+    box-shadow: -20px 0 40px rgb(106, 97, 97);
+}
+
+
+/*tablet*/
+@media only screen and (max-width: 960px){
+    .container{width: 100%};
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px){
+    header{
+        padding: 10px 20px;
+    }
+    header .hamburger,.toggle-menu{
+        display: block;
+    }
+    header .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top:0;
+        right: -300px; /*뒤에 숨겻음*/
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+        background-color:rgba(218, 183, 189, 0.931);
+        z-index: 2;
+
+    }
+    /*글자박스 크기 늘리기*/
+    header .menu li {
+        width: 100%;
+    }
+
+    header .menu li a{
+        padding: 30px;
+        font-size: 24px;
+        color:black;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    }
+
+    header .menu li a:hover{
+        background-color:rgba(255, 255, 255, 0.855);
+        box-shadow: 0 -5px 5px rgb(192, 186, 186) inset,
+        400px 0 0 rgba(255,255,255,0.03) inset;
+        padding: 35px 25px 45px 25px;
+    }
+
+}
