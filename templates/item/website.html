@@ -12,72 +12,89 @@
 
 <body>
     <header>
-        <nav>
-          <div class="signature">
-            <div class="logo">
-              <a href="#" class="name"><span>Portfolio</span></a>
-            </div>
+      <nav>
+        <div class="signature">
+          <div class="logo">
+            <a href="#" class="name"><span>Portfolio</span></a>
           </div>
-  
-          <div class="navigation">
-            <input type="checkbox" class="toggle-menu">
-            <div class="hamburger"></div>
-            <ul class="menu">
-              <li><a href="#"><span>Home</span></a></li>
-              <li><a href="#introduction-section"><span>Introduction</span></a></li>
-              <li><a href="#project-section"><span>Project</span></a></li>
-              <li><a href="#experience-section"><span>Experience</span></a></li>
-              <li><a href="#summary-section"><spane>Summary</spane></a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+        </div>
+        <div class="btn">
+          <form action="" method="POST">
+            <button type="submit" name="action2" value="Homepage" style="margin-right:30px; background:transparent; border:transparent">
+              <i class="fas fa-home" style="cursor:pointer;font-size:2.5rem; color:white; border:1px solid;"></i>
+            </button>
+          </form>
+        </div> 
+      </nav>
+    </header>
 
     <section id="web">
-        <div class="container">
-            <div class="project-image">
-                <div class="img" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahP8KdSO-tV3lDYllKTftXPTJ2H6UYlFevQ&usqp=CAU')"></div>
+      <div class="container">
+        <h1>Web Application</h1>
+        <h2>Summary</h2>
+        <p>
+          Here is the full-stack website I developed. Using python as a backend and html and css as a front end development.
+          Deployed by Azure and Amazon ECS. First medhod, Azure, visual studio code can publish to Github and connect with azure app service through github action. As CI deployment, visual studi code commision to github updates website.  But Azure has storage limited with free account.
+          Second method, AWS ECS, make docker image of flask and regsiter gitlab CI/CD. Push Docker Images to AWS ECS, build website and update website with Gitlab CI/CD for commit.
+        </p>
+        <div class="technologies">
+          <h2>Technologies</h2>
+          <div class="icons">
+            <div class="icon">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png" style="width:45px">
             </div>
-
-            <h1>Web Application</h1>
-            <div class ="info">
-                <div class="buttons">
-                    <a href="#"><i class="fas fa-solid fa-desktop"></i> View Project</a>
-                    <a href="#"><i class="fas fa-solid fa-code"></i> View Code</a>
-                </div>
+            <div class="icon">
+              <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" style="width:70px">
             </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem temporibus non iure amet sunt, pariatur sit atque a officiis excepturi dolor maiores ab! Porro distinctio tenetur, expedita quod alias in.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem temporibus non iure amet sunt, pariatur sit atque a officiis excepturi dolor maiores ab! Porro distinctio tenetur, expedita quod alias in.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem temporibus non iure amet sunt, pariatur sit atque a officiis excepturi dolor maiores ab! Porro distinctio tenetur, expedita quod alias in.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem temporibus non iure amet sunt, pariatur sit atque a officiis excepturi dolor maiores ab! Porro distinctio tenetur, expedita quod alias in.</p>
-
-            <div class="technologies">
-                <h3>Technologies</h3>
-
-                <div class="icons">
-                    <div class="icon">
-                        <img src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png" style="width:45px">
-                    </div>
-                    <div class="icon">
-                        <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png">
-                    </div>
-                    <div class="icon">
-                        <img src="https://camo.githubusercontent.com/07a52f72326754e7fe182adce6b572f1fc2bea794916e8c75e249d9b171fd4f6/68747470733a2f2f61626f75742e6769746c61622e636f6d2f696d616765732f63692f6769746c61622d63692d63642d6c6f676f5f32782e706e67">
-                    </div>
-                    <div class="icon">
-                        <img src="https://www.360techhub.io/public/uploads/service-50.png">
-                    </div>
-                </div>
+            <div class="icon">
+              <img src="https://www.unixtutorial.org/images/software/docker-hub.png">
             </div>
-
-            <div class="video">
-                <h3>Video Walkthrough</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/af5umzEYtoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div class="icon">
+              <img src="https://camo.githubusercontent.com/07a52f72326754e7fe182adce6b572f1fc2bea794916e8c75e249d9b171fd4f6/68747470733a2f2f61626f75742e6769746c61622e636f6d2f696d616765732f63692f6769746c61622d63692d63642d6c6f676f5f32782e706e67" style="width: 65px">
             </div>
+            <div class="icon">
+              <img src="https://1000logos.net/wp-content/uploads/2022/02/Gitlab-Logo.png" style="width:125px">
+            </div>
+            <div class="icon">
+              <img src="https://www.360techhub.io/public/uploads/service-50.png" style="width: 75px">
+            </div>
+            <div class="icon">
+              <img src="https://miro.medium.com/max/1200/1*Ff84x9Y-7PPWStblMhpFHg.png">
+            </div>
+          </div>
+        </div>  
+        
+        <h3>[1] LG Customer Video Tutorial Website</h3>
+        <div class ="info">
+          <div class="buttons">
+            <a href="http://ec2co-ecsel-18wyuowhrfffe-499695824.us-east-1.elb.amazonaws.com:5000/"><i class="fas fa-solid fa-desktop"></i> Visit Website</a>
+            <a href="https://github.com/EunbiYoon/LGVideoTutorial_Website.git"><i class="fas fa-solid fa-code"></i> View Code</a>
+          </div>
         </div>
-    </section>
+        <div class="image">
+          <img src="../../static/images/page1.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)">
+          <img src="../../static/images/page2.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+          <img src="../../static/images/page3.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+          <img src="../../static/images/page4.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+          <img src="../../static/images/page5.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+        </div>
 
+        <h4>[2] Portfolio Website</h4>
+        <div class ="info">
+          <div class="buttons">
+            <a href="http://ec2co-ecsel-18wyuowhrfffe-499695824.us-east-1.elb.amazonaws.com:5000/"><i class="fas fa-solid fa-desktop"></i> Visit Website</a>
+            <a href="https://github.com/EunbiYoon/LGVideoTutorial_Website.git"><i class="fas fa-solid fa-code"></i> View Code</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="../../static/images/page1.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)">
+          <img src="../../static/images/page2.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+          <img src="../../static/images/page3.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+          <img src="../../static/images/page4.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+          <img src="../../static/images/page5.png" style="width:1150px; border:1px solid rgba(128, 128, 128, 0.452)"">
+        </div>
+      </div>
+    </section>        
     <footer>
         <div class="social-container">
           <a href="https://www.linkedin.com/in/eunbiyoon0717/">

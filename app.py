@@ -6,14 +6,10 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def main():
     if request.method == 'POST':
-        if request.form.get('action1') == 'Big Data Analysis':
-            return render_template('item/data.html') # do something
-        elif  request.form.get('action2') == 'Vision System':
-            return render_template('item/visiion.html') # do something
-        elif  request.form.get('action3') == 'Quality Indicator':
-            return render_template('item/quality.html') # do something
-        elif  request.form.get('action4') == 'Web Application':
+        if  request.form.get('action1') == 'Web Application':
             return render_template("item/website.html") # do something
+        elif  request.form.get('action2') == 'Homepage':
+            return render_template("index.html") # do something
         else:
             pass # unknown
     elif request.method == 'GET':
