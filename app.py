@@ -8,6 +8,14 @@ def main():
     if request.method == 'POST':
         if  request.form.get('action1') == 'Web Application':
             return render_template("item/website.html") # do something
+
+        elif  request.form.get('action1') == 'Big Data Analysis':
+            return send_file("static/project-file/Python.pdf", as_attachment=True)    
+        elif  request.form.get('action1') == 'Vision System':
+            return send_file("static/project-file/Vision.pdf", as_attachment=True)
+        elif request.form.get('action1') == 'Quality Indicator':
+            return send_file("static/project-file/Quality.pdf", as_attachment=True)
+
         elif  request.form.get('action2') == 'Homepage':
             return render_template("index.html") # do something
         else:
@@ -17,10 +25,7 @@ def main():
     return render_template("index.html")
 
 
-@app.route('/download')
-def downloadFile ():
-    path = "static/QualityDetailedLogic.zip"
-    return send_file(path, as_attachment=True)
+
 
 
 if __name__ == "__main__":
