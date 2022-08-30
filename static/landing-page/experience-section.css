@@ -10,7 +10,6 @@
     backdrop-filter: blur(6px); 
     background-color:#16171b84;
     padding:0px;
-    border-radius: 20px;
 }
 
 #experience-section .large-title{
@@ -61,9 +60,11 @@
 /*전체 서식*/
 #experience-section .experience-container .box{
     background-color:rgba(255, 255, 255, 0.58);
-    border-radius: 10px;
     margin: auto 0;
     padding:10px;
+    -webkit-box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
 }
 #experience-section .experience-container .content{
     background-color: rgba(255, 255, 255, 0.548);
@@ -98,10 +99,15 @@
 }
 
 #experience-section .experience-container .content h5{
-    color: #215938;
-    font-size: 1.5rem;
-    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align:left;
+    padding-left: 15px
 }
+
+
 
 
 /*tablets*/
